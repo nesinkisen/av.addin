@@ -1,0 +1,313 @@
+.mainContainer {
+    margin: 8px;
+}
+
+.bs-example {
+    margin: 20px;
+}
+
+.close {
+    display: none;
+}
+
+body {
+    font-family: Arial;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.btnIcon {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btnIcon:hover {
+    background-color: RoyalBlue;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+select {
+    padding: 10px 10px;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*loader*/
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.dash {
+  margin: 0 15px;
+  width: 35px;
+  height: 15px;
+  border-radius: 8px;
+  background: #ff0000;
+  box-shadow: 0 0 10px 0 #FECDFF;
+}
+
+.uno {
+  margin-right: -18px;
+  transform-origin: center left;
+  animation: spin 3s linear infinite;  
+}
+
+.dos {
+  transform-origin: center right;
+  animation: spin2 3s linear infinite;
+  animation-delay: .2s;
+}
+
+.tres {
+  transform-origin: center right;
+  animation: spin3 3s linear infinite;
+  animation-delay: .3s;
+}
+
+.cuatro {
+  transform-origin: center right;
+  animation: spin4 3s linear infinite;
+  animation-delay: .4s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  30% {
+    transform: rotate(370deg);
+  }
+  35% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-180deg);
+  }
+  35% {
+    transform: rotate(-190deg);
+  }
+  40% {
+    transform: rotate(-180deg);
+  }
+  78% {
+    transform: rotate(-180deg);
+  }
+  95% {
+    transform: rotate(-360deg);
+  }
+  98% {
+    transform: rotate(-370deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  27% {
+    transform: rotate(0deg);  
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  45% {
+    transform: rotate(190deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  62% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  80% {
+    transform: rotate(370deg);
+  }
+  85% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  38% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(-360deg);
+  }
+  65% {
+    transform: rotate(-370deg);
+  }
+  75% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+/*loader*/
