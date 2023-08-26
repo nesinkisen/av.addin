@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "C:\\Users\\LENOVO\\Documents\\GitHub\\av.addin\\av.addin\\index.html",
+    "public": "C:\\Users\\LENOVO\\Documents\\GitHub\\av.addin\\index.html",
     "ignore": [
       "firebase.json",
       "**/.*",
