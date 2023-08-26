@@ -55,7 +55,7 @@ $(function()
 
     // Authenticate
     client
-    .loginImplicitGrant("4661d5c1-d791-478f-b440-3cc36f9cb882", REDIRECT_URI)
+    .loginImplicitGrant("502e4415-5faf-4c5e-ae4e-8c46ba24a4a2", REDIRECT_URI)
     .then(getUserList)
     .then(getStatusList).then(afterStatusList)
     .then(getUsersStatusList)
