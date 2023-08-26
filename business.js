@@ -28,8 +28,8 @@ var users = {};
 var statusList = [];
 //npm install -g local-ssl-proxy
 // local-ssl-proxy --source 6500 --target 5500
-//const REDIRECT_URI = "https://nesinkisen.github.io";
-const REDIRECT_URI = "http://localhost:5500";  
+const REDIRECT_URI = "https://nesinkisen.github.io/av.addin";
+//const REDIRECT_URI = "http://localhost:5500";  
 var client;
 
 $(function() 
