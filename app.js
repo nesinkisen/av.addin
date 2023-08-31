@@ -20,7 +20,6 @@ function setInteractionViaSocket(userId, state, startedDate)
         document.getElementById(users[userId].name + "_state").setAttribute("for", "");
         document.getElementById(users[userId].name + "_state").setAttribute("name", "");
         document.getElementById(users[userId].name + "_state").innerHTML = state;
-        setStatus(userId, "6a3af858-942f-489d-9700-5f9bcdcdae9b", startedDate);
     }
     else
     {
@@ -28,9 +27,7 @@ function setInteractionViaSocket(userId, state, startedDate)
         {
             document.getElementById(users[userId].name + "_state").setAttribute("for", state);
             document.getElementById(users[userId].name + "_state").setAttribute("name", startedDate);
-            document.getElementById(users[userId].name + "_state").innerHTML = state;
-
-            setStatus(userId, "ebc7a155-48fa-4009-82ef-8d32753da23a", startedDate);            
+            document.getElementById(users[userId].name + "_state").innerHTML = state;          
         }
         else
             document.getElementById(users[userId].name + "_state").innerHTML = state;

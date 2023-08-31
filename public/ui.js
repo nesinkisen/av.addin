@@ -70,7 +70,6 @@ function startTimers()
                 if(gridData.rows[i].cells[2].innerHTML.includes("disconnected") || gridData.rows[i].cells[2].innerHTML.includes("terminated"))
                 {
                     document.getElementById(users[userId].name + "_state").innerHTML = "";
-                    setStatus(userId, "6a3af858-942f-489d-9700-5f9bcdcdae9b", startedDate);
                 }                
                 else if(gridData.rows[i].cells[2].innerHTML.includes("connected"))
                 {
