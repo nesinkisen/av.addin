@@ -126,7 +126,7 @@ function AddItemToTable(userId, agent, statusId, modifiedDate, conversationState
     for (var i = 0; i < statusList.length; i++) 
     {
         if(statusList[i].languageLabels.en_US != "Available" && statusList[i].languageLabels.en_US != "Break" &&
-            statusList[i].languageLabels.en_US != "Meeting")
+            statusList[i].languageLabels.en_US != "Meeting") 
         {
             option = document.createElement("option")    
             option.value = statusList[i].id;
