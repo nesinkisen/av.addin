@@ -20,7 +20,7 @@ function getUserList()
                 obj[currentValue.id] = currentValue;
                 return obj;
             }, {});
-            console.log(users);
+            console.log("forHim " + users);
             //console.log(`getUsers success! data: ${JSON.stringify(data, null, 2)}`);
         })
         .catch(err =>
